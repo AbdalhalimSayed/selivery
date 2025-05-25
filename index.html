@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>تطبيق سيلفر</title>
+
+  <title>تطبيق سيلفري</title>
+  <link rel="shortcut icon" href="img/unnamed.png" type="image/x-icon">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,16 +22,35 @@
   <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
     <div class="container-fluid">
       <a class="navbar-brand text-white" href="#">
-        سيلفر
+        سيلفري
+        Selivery
       </a>
-      <img src="img/unnamed.png" alt="" class="rounded-circle" width="40" height="40">
+      <img src="img/unnamed.png" alt="" class="logo" class="rounded-circle" width="40" height="40">
     </div>
+  </nav>
+  <nav class="container-fluid rounded mt-2 mb-2 nav justify-content-center" style="background-color: #a2ede6;">
+    <a class="nav-link text-dark fs-4" aria-current="page" href="#home">
+      الرئيسية
+    </a>
+    <a class="nav-link text-dark fs-4" href="#about">
+      من نحن
+    </a>
+    <a class="nav-link text-dark fs-4" href="#services">
+      خدماتنا
+    </a>
+    <a class="nav-link text-dark fs-4" href="#contact">
+      اتصل بنا
+    </a>
   </nav>
 
   <!-- المقدمة -->
-  <section class="hero text-center">
+  <section class="hero text-center" id="home">
     <div class="container">
-      <h1>سيلفر</h1>
+      <h1 class="display-4 mb-3">
+        سيلفري
+        Selivery
+
+      </h1>
       <h2>
         تطبيقك المثالي للتنقل وتأجير السيارات في أسيوط
 
@@ -37,47 +59,291 @@
         احجز سيارة أو اطلب توصيلة في دقائق من هاتفك الذكي. سيلفر هو الحل الأمثل لتلبية احتياجاتك اليومية من التنقل.
 
       </p>
-      <div class="d-flex justify-content-around">
-        <a href="https://play.google.com/store/apps/details?id=com.selivery_client"
-          class="btn btn-light btn-lg cta-btn">حمّل التطبيق العميل الآن</a>
-        <a href="https://play.google.com/store/apps/details?id=com.selivery_driver"
-          class="btn btn-light btn-lg cta-btn">حمّل التطبيق السائق الآن</a>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-4 col-sm-12">
+          <a href="https://play.google.com/store/apps/details?id=com.selivery_client"
+            class="btn btn-light btn-lg cta-btn">حمّل التطبيق العميل الآن</a>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <a href="https://play.google.com/store/apps/details?id=com.selivery_driver"
+            class="btn btn-light btn-lg cta-btn">حمّل التطبيق السائق الآن</a>
+        </div>
+
+
       </div>
     </div>
   </section>
+  <!-- الصور -->
+
+  <div class="container my-4" style="direction: ltr;">
+
+    <div class="slider-container" id="sliderContainer">
+      <div class="slider-track" id="sliderTrack">
+        <!-- الصور -->
+        <div class="slider-item"><img src="img/photo_5778569521571940738_y.jpg" alt="1"></div>
+        <div class="slider-item"><img src="img/photo_5778569521571940739_y.jpg" alt="2"></div>
+        <div class="slider-item"><img src="img/photo_5778569521571940740_y.jpg" alt="3"></div>
+        <div class="slider-item"><img src="img/photo_5778569521571940741_y.jpg" alt="4"></div>
+        <div class="slider-item"><img src="img/photo_5859410894960837284_y.jpg" alt="5"></div>
+        <div class="slider-item"><img src="img/photo_5859410894960837285_y.jpg" alt="6"></div>
+        <div class="slider-item"><img src="img/photo_5859410894960837287_y.jpg" alt="7"></div>
+        <div class="slider-item"><img src="img/photo_5859410894960837353_x.jpg" alt="8"></div>
+        <div class="slider-item"><img src="img/photo_5859410894960837354_x.jpg" alt="9"></div>
+        <div class="slider-item"><img src="img/photo_5875351846468566711_y.jpg" alt="10"></div>
+        <div class="slider-item"><img src="img/photo_5875351846468566712_y.jpg" alt="11"></div>
+      </div>
+
+      <div class="slider-nav">
+        <button id="prevBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </button>
+        <button id="nextBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 6l6 6-6 6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="dots-container" id="dotsContainer"></div>
+  </div>
 
   <!-- المميزات -->
   <section class="py-5">
     <div class="container">
       <h2 class="text-center mb-4">مميزات التطبيق</h2>
       <div class="row text-center">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="mb-3 feature-icon">🚗</div>
           <h5>تأجير سيارات بسهولة</h5>
           <p>ابحث عن سيارات متوفرة بالقرب منك واستأجرها فورًا.</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="mb-3 feature-icon">🕒</div>
           <h5>توصيل سريع</h5>
           <p>اطلب توصيلة لأي مكان في مدينتك خلال دقائق.</p>
         </div>
-        <div class="col-md-4">
-          <div class="mb-3 feature-icon">💳</div>
-          <h5>دفع إلكتروني آمن</h5>
-          <p>ادفع بسهولة باستخدام بطاقتك أو محفظتك الإلكترونية.</p>
-        </div>
+<!--        <div class="col-md-4">-->
+<!--          <div class="mb-3 feature-icon">💳</div>-->
+<!--          <h5>-->
+<!--              أدفع للسائق-->
+<!--          </h5>-->
+<!--          <p>ادفع بسهولة باستخدام بطاقتك أو محفظتك الإلكترونية.</p>-->
+<!--        </div>-->
       </div>
     </div>
   </section>
 
-
-
-  <!-- الفوتر -->
-  <footer class="py-3 bg-dark text-white text-center">
+  <!-- من نحن -->
+  <section class="py-5 bg-light" id="about">
     <div class="container">
+      <h2 class="text-center mb-4">من نحن</h2>
+      <p class="text-right">
+        نحن سيلفري، منصة رائدة في مجال التنقل وتأجير السيارات في محافظة أسيوط، نسعى إلى تقديم حلول ذكية وعصرية تلبي
+        احتياجاتك
+        اليومية للتنقل بكل سهولة وأمان
+      </p>
+      <div class="row text-center mt-5">
+        <div class="col-md-6">
+          <h5>
+            رؤيتنا
+          </h5>
+          أن نكون الخيار الأول للتنقل وتأجير السيارات في أسيوط، من خلال تقديم خدمات سريعة وموثوقة تعتمد على التكنولوجيا
+          الحديثة
+          وتجربة المستخدم المميزة
+        </div>
+        <div class="col-md-6">
+          <h5>
+            رسالتنا
+          </h5>
+          توفير وسائل تنقل مريحة وآمنة بتكلفة معقولة، مع الحفاظ على معايير الجودة والكفاءة، لنكون شريكك المثالي في كل
+          رحلة.
+        </div>
+
+      </div>
+
+      <div class="text-right">
+        <h2 class="mt-5 text-center mb-5">
+          لماذا تختار سيلفري؟
+        </h2>
+        <ul class="list-unstyled">
+          <li>
+            <span class="fs-5">
+              سرعة وسهولة الحجز -
+            </span>
+            احجز سيارة أو اطلب توصيلة في دقائق معدودة من خلال تطبيقنا الذكي
+          </li>
+          <li>
+            <span class="fs-5 ">
+              أسعار تنافسية -
+            </span>
+            نقدم عروضًا مميزة تناسب جميع الفئات
+          </li>
+          <li>
+            <span class="fs-5">
+              سائقون محترفون -
+            </span>
+            فريقنا مدرب على أعلى مستوى لضمان رحلتك الآمنة والمريحة
+          </li>
+          <li>
+            <span class="fs-5">
+              مركبات متنوعة -
+            </span>
+            لدينا مجموعة واسعة من السيارات التي تلبي جميع احتياجاتك
+          </li>
+          <li>
+            <span class="fs-5">
+              دعم فني متكامل -
+            </span>
+            نحن هنا لمساعدتك على مدار الساعة
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- خدماتنا -->
+  <section class="py-5 bglight" id="services">
+    <div class="container">
+      <h2 class="text-center mb-4">خدماتنا</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h5>تأجير السيارات</h5>
+          <p>استأجر سيارة تناسب احتياجاتك اليومية أو رحلاتك الخاصة.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>التوصيل السريع</h5>
+          <p>احصل على توصيلة سريعة وآمنة إلى وجهتك المفضلة.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>الدعم الفني</h5>
+          <p>فريق دعم متاح على مدار الساعة لمساعدتك في أي استفسار.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--التواصل معنا -->
+  <section class="py-5 bg-light" id="contact">
+    <div class="container">
+      <h2 class="text-center mb-5">التواصل معنا</h2>
+
+      <div class="row justify-content-center">
+        <!-- خدمة العملاء 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card text-center h-100 contact-card">
+            <div class="card-body py-4">
+              <div class="contact-icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h4 class="card-title">خدمة العملاء</h4>
+              <p class="card-text">متاح من 8 صباحاً حتى 12 مساءً</p>
+              <a href="tel:+201123154598" class="btn btn-outline-primary">
+                <i class="fas fa-phone"></i> 01123154598
+              </a>
+              <a href="tel:+201093457381" class="btn btn-outline-primary">
+                <i class="fas fa-phone"></i> 01093457381
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- خدمة العملاء 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card text-center h-100 contact-card">
+            <div class="card-body py-4">
+              <div class="contact-icon">
+                <i class="fas fa-phone-volume"></i>
+              </div>
+              <h4 class="card-title">الدعم الفني</h4>
+              <p class="card-text">متاح على مدار 24 ساعة</p>
+              <a href="tel:+201006048403" class="btn btn-outline-primary">
+                <i class="fas fa-phone"></i> 01006048403
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- التواصل الاجتماعي -->
+        <div class="col-md-4 mb-4">
+          <div class="card text-center h-100 contact-card">
+            <div class="card-body py-4">
+              <div class="contact-icon">
+                <i class="fab fa-facebook"></i>
+              </div>
+              <h4 class="card-title">تواصل معنا على</h4>
+              <p class="card-text">تابعنا للحصول على آخر العروض والأخبار</p>
+              <a href="https://www.facebook.com/share/1C882quiga/?mibextid=wwXIfr" target="_blank"
+                class="btn btn-primary">
+                <i class="fab fa-facebook-f social-icon"></i> فيسبوك
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- الفوتر -->
+  <footer class="py-3 text-white text-center">
+    <div class="row text-center " >
+      <div class="col-md-4">
+        <h3>
+          خدمة العملاء
+
+        </h3>
+        <ul class="serul">
+          <li>
+            <a href="tel:+201123154598">
+              <i class="fas fa-headset"></i>
+              01123154598
+            </a>
+          </li>
+          <li>
+            <a href="tel:+201093457381">
+              <i class="fas fa-headset"></i>
+              01093457381
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3>
+          الدعم الفني
+        </h3>
+        <ul class="serul">
+          <li>
+            <a href="tel:+201006048403">
+              <i class="fas fa-phone"></i>
+              01006048403
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3>
+          مواقع التواصل
+        </h3>
+        <ul class="facebook">
+          <li>
+            <a href="https://www.facebook.com/share/1C882quiga/?mibextid=wwXIfr">
+              فيسبوك
+              <i class="fa-brands fa-square-facebook" style="color: darkblue;"></i>
+
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+    <div class="container" style="direction: rtl !important;">
       جميع الحقوق محفوظة © 2024
+      Selivery
     </div>
   </footer>
+  <script src="js/bootstrap.js"></script>
+
+  <script src="js/script.js"></script>
 
 </body>
 
