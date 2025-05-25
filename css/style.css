@@ -1,0 +1,48 @@
+body {
+  color: #a2ede6;
+  background-color: #0e7c74;
+  color: #b21623;
+  background-color: #f8f9fa;
+  color: #1c1c1c;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f8f9fa;
+  font-family: "Amiri",
+    serif;
+}
+
+.navbar {
+  background-color: #0e7c74 !important;
+  color: white;
+}
+
+.btn.btn-light {
+  background-color: #0e7c74 !important;
+  color: #fff !important;
+}
+
+.btn.btn-light:hover {
+  background-color: #a2ede6 !important;
+  color: #0e7c74 !important;
+}
+
+.hero {
+  background: linear-gradient(to left, #a2ede6, #0e7c74, #a2ede6);
+  color: white;
+  padding: 80px 0;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.cta-btn {
+  margin-top: 20px;
+}
