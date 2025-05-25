@@ -1,10 +1,10 @@
-body {
+/* body {
   color: #a2ede6;
   background-color: #0e7c74;
   color: #b21623;
   background-color: #f8f9fa;
   color: #1c1c1c;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -28,6 +28,14 @@ body {
   z-index: 1000;
 }
 
+@media (max-width:768px) {
+  .nav {
+    position: sticky;
+    top: 25px;
+    z-index: 1000;
+  }
+}
+
 .nav-link:hover {
   background-color: #0e7c74;
   border-radius: 10px;
@@ -49,6 +57,12 @@ body {
   padding: 80px 0;
 }
 
+@media (max-width:768px) {
+  .hero {
+    background: #0e7c74;
+  }
+}
+
 .hero h1 {
   font-size: 2.5rem;
 }
@@ -63,6 +77,8 @@ body {
 }
 
 .logo {
+  width: 60px;
+  height: 60px;
   transition: transform 0.3s ease;
   border-radius: 50%;
   border: 2px solid #a2ede6;
@@ -73,7 +89,7 @@ body {
 }
 
 footer {
-  background:#0e7c74;
+  background: #0e7c74;
   color: white;
   padding: 20px 0;
   direction: ltr;
@@ -97,8 +113,8 @@ footer {
 
 .slider-item {
   flex: 0 0 auto;
-  width: 400px;
-  height: 450px;
+  width: 450px;
+  height: 500px;
   margin: 0 10px;
   border-radius: 8px;
   overflow: hidden;
@@ -178,8 +194,8 @@ footer {
 
 @media (max-width: 768px) {
   .slider-item {
-    width: 300px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     margin: 0 8px;
   }
 
@@ -201,24 +217,32 @@ footer {
   margin-left: 10px;
   font-size: 1.2rem;
 }
-h3{
+
+h3 {
   direction: rtl;
 }
-.serul ,.facebook{
+
+.serul,
+.facebook {
   list-style: none;
 
 }
-.serul li, .facebook li{
+
+.serul li,
+.facebook li {
   margin-bottom: 10px;
 }
-.serul li a, .facebook li a {
+
+.serul li a,
+.facebook li a {
   color: white;
   text-decoration: none;
   font-size: 20px;
 
 }
 
-.serul li a:hover,.facebook li a:hover {
+.serul li a:hover,
+.facebook li a:hover {
   text-decoration: underline;
   padding-right: 10px;
 }
