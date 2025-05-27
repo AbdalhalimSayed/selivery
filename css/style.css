@@ -113,8 +113,8 @@ footer {
 
 .slider-item {
   flex: 0 0 auto;
-  width: 450px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   margin: 0 10px;
   border-radius: 8px;
   overflow: hidden;
