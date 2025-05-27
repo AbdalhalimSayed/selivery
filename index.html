@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>تطبيق سيلفري</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="shortcut icon" href="img/unnamed.png" type="image/x-icon">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/all.min.css">
@@ -77,37 +78,30 @@
 
   <div class="container my-4" style="direction: ltr;">
 
-    <div class="slider-container" id="sliderContainer">
-      <div class="slider-track" id="sliderTrack">
-        <!-- الصور -->
-        <div class="slider-item"><img src="img/photo_5778569521571940738_y.jpg" alt="1"></div>
-        <div class="slider-item"><img src="img/photo_5778569521571940739_y.jpg" alt="2"></div>
-        <div class="slider-item"><img src="img/photo_5778569521571940740_y.jpg" alt="3"></div>
-        <div class="slider-item"><img src="img/photo_5778569521571940741_y.jpg" alt="4"></div>
-        <div class="slider-item"><img src="img/photo_5859410894960837284_y.jpg" alt="5"></div>
-        <div class="slider-item"><img src="img/photo_5859410894960837285_y.jpg" alt="6"></div>
-        <div class="slider-item"><img src="img/photo_5859410894960837287_y.jpg" alt="7"></div>
-        <div class="slider-item"><img src="img/photo_5859410894960837353_x.jpg" alt="8"></div>
-        <div class="slider-item"><img src="img/photo_5859410894960837354_x.jpg" alt="9"></div>
-        <div class="slider-item"><img src="img/photo_5875351846468566711_y.jpg" alt="10"></div>
-        <div class="slider-item"><img src="img/photo_5875351846468566712_y.jpg" alt="11"></div>
-      </div>
-
-      <div class="slider-nav">
-        <button id="prevBtn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M15 18l-6-6 6-6" />
-          </svg>
-        </button>
-        <button id="nextBtn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M9 6l6 6-6 6" />
-          </svg>
-        </button>
+    <div class="swiper-container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- الصور الأصلية -->
+          <div class="swiper-slide"><img src="img/photo_1.jpg" alt="1"></div>
+          <div class="swiper-slide"><img src="img/photo_2.jpg" alt="2"></div>
+          <div class="swiper-slide"><img src="img/photo_3.jpg" alt="3"></div>
+          <div class="swiper-slide"><img src="img/photo_4.jpg" alt="4"></div>
+          <div class="swiper-slide"><img src="img/photo_5.jpg" alt="5"></div>
+          <div class="swiper-slide"><img src="img/photo_6.jpg" alt="6"></div>
+          <div class="swiper-slide"><img src="img/photo_7.jpg" alt="7"></div>
+          <div class="swiper-slide"><img src="img/photo_8.jpg" alt="8"></div>
+          <div class="swiper-slide"><img src="img/photo_9.jpg" alt="9"></div>
+          <div class="swiper-slide"><img src="img/photo_10.jpg" alt="10"></div>
+          <div class="swiper-slide"><img src="img/photo_11.jpg" alt="11"></div>
+          <div class="swiper-slide"><img src="img/photo_12.jpg" alt="12"></div>
+          <div class="swiper-slide"><img src="img/photo_13.jpeg" alt="13"></div>
+          <div class="swiper-slide"><img src="img/photo_14.jpg" alt="14"></div>
+          <div class="swiper-slide"><img src="img/photo_15.jpeg" alt="15"></div>
+          <div class="swiper-slide"><img src="img/photo_16.jpeg" alt="16"></div>
+          <div class="swiper-slide"><img src="img/photo_17.jpeg" alt="17"></div>
+        </div>
       </div>
     </div>
-
-    <div class="dots-container" id="dotsContainer"></div>
   </div>
 
   <!-- المميزات -->
@@ -340,8 +334,8 @@
               </div>
               <h4 class="card-title">خدمة العملاء</h4>
               <p class="card-text">متاح من 8 صباحاً حتى 12 مساءً</p>
-              <a href="tel:+201123154598" class="btn btn-outline-primary">
-                <i class="fas fa-phone"></i> 01123154598
+              <a href="tel:+201023552165" class="btn btn-outline-primary">
+                <i class="fas fa-phone"></i> 01023552165
               </a>
               <a href="tel:+201093457381" class="btn btn-outline-primary">
                 <i class="fas fa-phone"></i> 01093457381
@@ -387,9 +381,9 @@
         </h3>
         <ul class="serul">
           <li>
-            <a href="tel:+201123154598">
+            <a href="tel:+201023552165">
               <i class="fas fa-headset"></i>
-              01123154598
+              01023552165
             </a>
           </li>
           <li>
@@ -424,6 +418,7 @@
     </div>
   </footer>
   <script src="js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script src="js/script.js"></script>
 
