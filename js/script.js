@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     centeredSlides: false,
     spaceBetween: parseInt(getComputedStyle(document.documentElement).getPropertyValue('--gap-size')),
     loop: false,
-    speed: 8000,
+    speed: 4000,
     autoplay: {
       delay: 0,
       disableOnInteraction: true,
